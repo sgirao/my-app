@@ -1,0 +1,9 @@
+@if (product) {
+    <div>
+        <p>You selected:
+            <strong>{{productTitle}}</strong>
+        </p>
+        <p>{{product.price | currency:'EUR'}}</p>
+        <button (click)="addToCart()">Add to cart</button>
+    </div>
+}
